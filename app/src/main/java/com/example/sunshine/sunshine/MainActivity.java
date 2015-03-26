@@ -1,5 +1,6 @@
 package com.example.sunshine.sunshine;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -35,7 +36,12 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            Intent SettingsActivityIntent = new Intent(, SettingsActivity.class);
+            startActivity(SettingsActivityIntent);
+
             return true;
+
         }
 
         return super.onOptionsItemSelected(item);
