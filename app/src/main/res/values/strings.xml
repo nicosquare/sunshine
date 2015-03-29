@@ -8,4 +8,27 @@
     <string name="title_activity_detail">DetailActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
+    <!--Label for preference window title location -->
+    <string name="pref_location_label">Location</string>
+    <!--Default location for preference window-->
+    <string name="pref_location_default">Bogota,co</string>
+    <!--Key for preference window location-->
+    <string name="pref_location_key">location</string>
+
+    <!--Label for preference window title units-->
+    <string name="pref_units_label">Temperature units</string>
+    <!--Default units for preference window-->
+    <string name="pref_units_default">metric</string>
+    <!--Key for preference window units-->
+    <string name="pref_units_key">units</string>
+    <!-- Label for metric option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_units_label_metric">Metric</string>
+    <!-- Label for imperial option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_units_label_imperial">Imperial</string>
+    <!-- Value in SharedPreferences for metric temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_metric" translatable="false">metric</string>
+    <!-- Value in SharedPreferences for imperial temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_imperial" translatable="false">imperial</string>
+
+
 </resources>

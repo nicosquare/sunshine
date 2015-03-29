@@ -18,6 +18,9 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new ForecastFragment())
                     .commit();
         }
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.ic_launcher);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
     }
 
     @Override
@@ -36,10 +39,7 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-
-            Intent SettingsActivityIntent = new Intent(, SettingsActivity.class);
-            startActivity(SettingsActivityIntent);
-
+            startActivity(new Intent(this, SettingsActivity.class));
             return true;
 
         }
